@@ -11,4 +11,4 @@ Script em Bash para análise de logs de forma rápida e interativa via terminal.
 ## Como executar
 ```bash
 chmod +x script_analise.sh
-./script_analise.sh "arquivo_para_análise.log"
+./script_analise.sh arquivo_para_análise.log
