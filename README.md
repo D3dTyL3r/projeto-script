@@ -1,8 +1,14 @@
-# Análise de log
+# Análise de Logs - Menu Interativo em Bash
 
-Menu interativo em Bash usando case.
+Script em Bash para análise de logs de forma rápida e interativa via terminal.
+
+## Funcionalidades
+- Menu interativo com 7 opções
+- Filtros para análise de logs
+- Validação de entrada do usuário
+- Execução contínua até saída manual
 
 ## Como executar
-chmod +x script.sh
-./script.sh
-
+```bash
+chmod +x script_analise.sh
+./script_analise.sh
