@@ -3,7 +3,7 @@
 # ============================================================
 # SCRIPT DE MENU INTERATIVO PARA ANÁLISE DE LOGS
 # ============================================================
-# Este script apresenta um menu com 7 opções voltadas para
+# Este script apresenta um menu com 10 opções voltadas para
 # análise de arquivos de log em ambiente Linux.
 #
 # O usuário pode selecionar uma opção digitando o número
@@ -11,7 +11,7 @@
 # nos logs do sistema.
 #
 # FUNCIONAMENTO:
-# - Escolha de 1 a 7: executa rotinas de análise de logs
+# - Escolha de 1 a 10: executa rotinas de análise de logs
 # - Opção 0: encerra o script imediatamente
 # - Qualquer outro valor: retorna Opção inválida
 #
