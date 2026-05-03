@@ -1,11 +1,39 @@
 #!/bin/bash
 
+# ============================================================
+# SCRIPT DE MENU INTERATIVO PARA ANÁLISE DE LOGS
+# ============================================================
+# Este script apresenta um menu com 7 opções voltadas para
+# análise de arquivos de log em ambiente Linux.
+#
+# O usuário pode selecionar uma opção digitando o número
+# correspondente para executar consultas, filtros ou inspeções
+# nos logs do sistema.
+#
+# FUNCIONAMENTO:
+# - Escolha de 1 a 7: executa rotinas de análise de logs
+# - Opção 0: encerra o script imediatamente
+# - Qualquer outro valor: retorna Opção inválida
+#
+# Após executar uma opção:
+# - Pressione ENTER para voltar ao menu
+# - Pressione q para sair do script
+#
+# Estrutura baseada em:
+# - Loop contínuo (while)
+# - Controle de fluxo com case (equivalente ao switch)
+#
+# OBJETIVO:
+# Facilitar a análise rápida de logs, permitindo identificar
+# eventos como erros, acessos, falhas e padrões relevantes.
+# ============================================================
+
 log="$1"
 
 clear
 while true; do
 
-	echo "===== Menu ====="
+	echo "============== Menu =============="
 	echo ""
 	echo "1 - Detectar possíveis ataques de XSS (Cross-Site Scripting)"
 	echo "2 - Detectar tentativas de SQL Injection"
@@ -17,6 +45,7 @@ while true; do
 	echo "8 - Localizar user-agent utilizado por um IP suspeito"
 	echo "9 - Listar os ips e verificar o numero de requisições"
 	echo "10 - Localizar acesso a um determinado arquivo sensível"
+	echo "0 - SAIR"
 	echo ""
 	read -p "Escolha uma opção: " op
 	echo ""
@@ -104,7 +133,6 @@ while true; do
 			echo "Executando opção 9"
 			echo "Volume de requisições por IP"
 			echo ""
-			#read -p "Digite o IP Suspeito: " ip
 			cat "$log" | cut -d " " -f1 | sort | uniq -c
 			;;
 		10)
