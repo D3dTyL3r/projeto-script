@@ -3,7 +3,7 @@
 Script em Bash para análise de logs de forma rápida e interativa via terminal.
 
 ## Funcionalidades
-- Menu interativo com 7 opções
+- Menu interativo com 10 opções
 - Filtros para análise de logs
 - Validação de entrada do usuário
 - Execução contínua até saída manual
